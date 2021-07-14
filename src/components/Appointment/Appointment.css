@@ -1,0 +1,143 @@
+.header-appointemnt {
+    position: absolute;
+    height: 125px;
+    width: 100%;
+    background-color: lightblue;
+    z-index: -1000000;
+}
+
+.main img {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.header-cards {
+    display: flex;
+}
+
+.header-cards div {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    line-height: 100px;
+    margin-bottom: 7px;
+}
+
+.header-cards .card1 .price-tag, .quality, .good, .trust, .flash {
+    color: white !important;
+    font-size: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-cards .card1, .card3, .card5 {
+    background-color: #00ACEA;
+}
+
+.header-cards .card2, 
+.header-cards .card4 {
+    background-color: #04befe;
+    place-items: center;
+}
+
+.doctor {
+    padding: 50px 10px 0px 10px;
+    height: 200px;
+    background-color: #fff;
+}
+
+.doctor .profile {
+    height: 80px;
+    color: black;
+    text-align: center;
+    line-height: 80px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0px 4px 10px black;
+}
+
+.all-doctors {
+    height: 250px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.doctor .profile1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color : black;
+    font-family: 'Times New Roman', Times, serif;
+    height: 200px;
+    padding-top: 15px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px black;
+}
+
+.doctor .profile1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.doctor .profile2 {
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px black;
+    align-items: center;
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.doctor .profile2 img {
+    width: 150px;
+    height: 150px;
+}
+
+.slick-next {
+    display: none !important;
+    pointer-events: none;
+}
+
+@media screen and (min-width : 768px) {
+    .header-appointemnt { 
+        height: 145px;
+    }
+    .main {
+        padding : 0px 20px;
+    }
+
+    .main img {
+        height: 500px;
+        margin-top: 70px;
+    }
+
+    .header-cards {
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-cards div {
+        background-color: #00ACEA;
+        line-height: 250px;
+    }
+
+    .header-cards .card1 .price-tag, .quality, .good, .trust, .flash {
+        display: inline;
+    }
+}
